@@ -19,7 +19,18 @@
     };
 };
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+&mmv_input_listener {
+    /* 레이어 1, 8일 때는 1/5로 줄여라! */
+    layer_slow {
+        layers = <1 8>;
+        input-processors = <&zip_xy_scaler 1 5>;
+    };
+    /* 레이어 2, 9일 때는 3/2(1.5배)로 늘려라! */
+    layer_fast {
+        layers = <2 9>;
+        input-processors = <&zip_xy_scaler 3 2>;
+    };
+};
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
 
