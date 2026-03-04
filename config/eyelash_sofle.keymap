@@ -352,7 +352,7 @@
 &trans   &trans  &trans  &kp W   &trans          &trans    &trans  &kp PRINTSCREEN  &mkp LCLK          &mmv MOVE_Y(-600)  &mkp RCLK         &mkp MCLK        &kp F12
 &trans   &trans  &kp A   &kp S   &kp D           &trans    &trans  &kp LC(Z)        &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &msc SCRL_DOWN   &trans
 &trans   &to 8   &trans  &trans  &trans          &trans    &trans  &kp LC(LS(Z))    &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP      &msc SCRL_RIGHT  &trans
-&trans   &trans  &trans  &trans  &kp LEFT_SHIFT  &trans    &trans  &trans           &mo 6              &trans             &trans            &trans
+&trans   &trans  &trans  &trans  &kp LEFT_SHIFT  &trans    &none   &trans           &mo 6              &trans             &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
